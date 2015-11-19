@@ -1,0 +1,59 @@
+Edwin Mak
+CSE 373
+HW #1 Sound Blaster! Write-Up
+
+1)I created my own .dat file to run against my code, and I also ran bot.dat and secret.dat
+  against it.
+  
+  Ex.
+  ; Sample Rate 44100
+  0               0
+  2.2675737e-05   1
+  4.5351474e-05   2
+  6.8027211e-05   3
+  9.0702948e-05   4
+  0.00011337868   5
+  0.00013605442   6
+  0.00015873016   7
+  0.00018140590   8
+  0.00020408163   9
+  0.00034523412   10
+  0.00041341231   11
+
+2)The scent of bitter almonds always reminded him of the fate of unrequited love.
+
+3)My array would have to double 17 times to handle 1 million lines. If there were 
+  1 billion lines, the array would have to double 27 times. If there were
+  1 trillion lines it would need to double be 37 times. Because my array starts with a size 
+  of ten, the equation to solve for the number of times needed is 
+  is 10*2^(x) = y, where y is1 million,1 billion,1 trillion. X is the number of 
+  times the array would have to double. You would need to round up if you get a decimal
+  because you must accommodate the extra lines.
+  
+4)push(double d){
+      new Queue q1;  //make a new queue
+      q1.enqueue(d); //add new items to back of queue
+  }
+  
+  pop double (){
+      if isEmpty throw exception
+      else{
+         for(i = 0; i < queue.size - 1 ; i++){ //add items from the front to the back 
+            q1.dequeue(q1.enqueue())           //    until the front is the one that 
+         }                                     //    was originally at the back of the queue
+         return q1.dequeue;                    
+
+  }
+   
+5)The implementation I used for the queue has an O(N) runtime, instead of an O(1) runtime for
+  the array implementation. However, the benefits of using the queue implementation is that 
+  there is no wasted space compared to the the array which might have empty cells. I would 
+  choose an array implementation for larger inputs because it would be faster than a queue.
+  
+6)I implemented my array to halve in size when the array is 1/4 full.
+
+7)I liked that it refreshed my memory in concepts that should have been review. 
+  It was a good first homework assignment after being removed from programming for
+  a while.
+  
+8)//none
